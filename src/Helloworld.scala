@@ -3,9 +3,18 @@
   */
 object Helloworld {
   def main(args: Array[String]): Unit = {
-    for (i <- 1 to 5; j <- 6 to 10) {
-      println("i: " + i)
-      println("j: " + j)
+    def printPrimes(): Unit ={
+      val primeList = List(1,2,3,5,7,11)
+      for(i <- primeList) {
+        if(i == 11) {
+          return
+        }
+
+        if(i != 1){
+          println(i)
+        }
+      }
     }
+    printPrimes
   }
 }
