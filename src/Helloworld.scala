@@ -1,20 +1,20 @@
 /**
   * Created by tweinyan on 27/11/2017.
   */
+import scala.io.StdIn.{readLine, readInt}
+import scala.math._
+import scala.collection.mutable.ArrayBuffer
+import java.io.PrintWriter
+import scala.io.Source
+
 object Helloworld {
   def main(args: Array[String]): Unit = {
-    def printPrimes(): Unit ={
-      val primeList = List(1,2,3,5,7,11)
-      for(i <- primeList) {
-        if(i == 11) {
-          return
-        }
-
-        if(i != 1){
-          println(i)
-        }
-      }
+    def factorial(num : BigInt) : BigInt = {
+      if(num <= 1)
+        1
+      else
+        num * factorial(num - 1)
     }
-    printPrimes
+    println("Factorial of 10 = " + factorial(10))
   }
 }
