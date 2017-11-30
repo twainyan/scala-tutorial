@@ -1,6 +1,7 @@
 /**
   * Created by tweinyan on 29/11/2017.
   */
+
 object ScalaExceptionHandling {
   def main(args: Array[String]): Unit = {
     def divideNums(num1: Int, num2: Int) = try
